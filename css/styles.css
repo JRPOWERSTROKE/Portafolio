@@ -1,0 +1,270 @@
+/*Personalización del Index*/
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url(/fonts/Poppins-Black.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primario: #fffcf9;
+    --color-secundiario: #3772ff;
+}
+
+.index {
+    background-image: url(../Image/fondoindex.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    font-family: 'Poppins-Black', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.3em;
+    color: var(--color-primario);
+    cursor: pointer;
+}
+
+.logo span{
+    color: var(--color-secundiario);
+}
+
+.navegacion a{
+    font-size: 1.2em;
+    color: var(--color-primario);
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navegacion a:hover{
+    color: var(--color-secundiario);
+}
+
+.btn-hablar {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: var(--color-secundiario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundiario);
+    font-weight: 600;
+    transform: .3s;
+}
+
+.btn-hablar:hover {
+    color: var(--color-secundiario);
+    background: transparent;
+}
+
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+
+.portada {
+    border-radius: 3000px;
+    top: 50px;
+    left: -30px;
+    height: 50%;
+    width: 55%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 53px 120px; 
+}
+
+.contenido {
+    max-width: 600px;
+    color: var(--color-primario);
+}
+
+.contenido h2{
+    font-size: 35px;
+}
+
+.contenido h2 span{
+    color: var(--color-secundiario);
+}
+
+.contenido h4{
+    font-size: 1.5em;
+}
+
+.contenido p{
+    padding: 10px 0 40px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.btn-grupo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--color-secundiario);
+    border-radius: 10px;
+    border: 2px solid var(--color-secundiario);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-grupo a:nth-child(1) {
+    color: var(--color-secundiario);
+    background: transparent;
+    margin-left: 50px;
+    padding: 10px 30px;
+}
+
+.btn-grupo a:hover:nth-child(1) {
+    background-color: var(--color-secundiario);
+    color: #fff;
+}
+
+.btn-grupo a:nth-child(2) {
+    color: var(--color-secundiario);
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+
+.btn-grupo a:hover:nth-child(2) {
+    background-color: var(--color-secundiario);
+    color: #fff;
+}
+
+.iconos-redes {
+    position: absolute;
+    bottom: 50px;
+}
+
+.iconos-redes img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--color-secundiario);
+    border-radius: 50%;
+    margin-right: -130px;
+    margin-left: 150px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid var(--color-secundiario);
+    transition: .3s;
+}
+
+.iconos-redes img:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 11px;
+}
+
+/*Personalización del Contactame*/
+
+.contactame {
+    background-image: url(../Image/fondocontactame.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;  
+}
+
+.form {
+    background-color: #fff;
+    margin: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    padding: 70px 40px;
+    box-shadow: 0px 8px 8px 8px rgb(17, 209, 219);
+}
+
+.form-container {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-auto-columns: 100%;
+}
+
+.form-title {
+    color: var(--color-secundiario);
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 12px;
+    text-shadow: 0px 8px 8px #565755;
+}
+
+.form-input {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px 12px;
+    outline: none;
+    border: none;
+    border: 1.5px solid #bbb0b0;
+    border-radius: 6px;
+}
+
+.form-input--message {
+    resize: none;
+    padding: 30px 15px;
+    margin-bottom: .5em;
+}
+
+.form-cta {
+    background-color: var(--color-secundiario);
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    font-weight: 16px;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 900;
+    border: 2px solid var(--color-secundiario);
+    transition: .3s;
+}
+
+.form-cta:hover {
+    color: var(--color-secundiario);
+    background: var(--color-primario);
+    transform: translateY(-5px);
+}
+
+/*Diseño Pagina Mis Proyectos*/
+
+.proyects {
+    background-color: rgb(248, 255, 190);
+}
+
