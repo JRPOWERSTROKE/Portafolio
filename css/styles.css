@@ -206,14 +206,14 @@ footer {
     width: 100%;
     max-width: 400px;
     border-radius: 20px;
-    padding: 70px 40px;
-    box-shadow: 0px 4px 4px 4px rgb(17, 209, 219);
+    padding: 50px 40px;
+    box-shadow: 0px 4px 4px 4px #d5f161;
 }
 
 .form-container {
     width: 100%;
     display: grid;
-    gap: 20px;
+    gap: 15px;
     grid-auto-columns: 100%;
 }
 
@@ -238,7 +238,7 @@ footer {
 .form-input--message {
     resize: none;
     padding: 30px 15px;
-    margin-bottom: .5em;
+    margin-bottom: 1em;
 }
 
 .form-cta {
@@ -258,6 +258,29 @@ footer {
 
 .form-cta:hover {
     color: var(--color-secundiario);
+    background: var(--color-primario);
+    transform: translateY(-5px);
+}
+
+.form-cte {
+    text-decoration: none;
+    text-align: center;
+    background-color: #cc4141;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    font-weight: 16px;
+    font-size: 16px;
+    padding: 10px 0;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 900;
+    border: 2px solid #cc4141;
+    transition: .3s;
+}
+
+.form-cte:hover {
+    color: #cc4141;
     background: var(--color-primario);
     transform: translateY(-5px);
 }
